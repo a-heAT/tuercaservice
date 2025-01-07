@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Parallax</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sección con efecto Parallax */
+        .parallax-section {
+            height: 100vh; /* Altura de la sección */
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            background-attachment: fixed; /* Fija el fondo para el efecto Parallax */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Secciones normales para contenido */
+        .content-section {
+            height: 100vh; /* Altura de la sección */
+            background-color: #f4f4f4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-section">
+        <h1>Bienvenido al Efecto Parallax</h1>
+    </div>
+    <div class="content-section">
+        <p>Esta es una sección de contenido normal.</p>
+    </div>
+    <div class="parallax-section">
+        <h1>¡Scroll para ver más!</h1>
+    </div>
+    <div class="content-section">
+        <p>Otra sección de contenido normal.</p>
+    </div>
+</body>
+</html>
